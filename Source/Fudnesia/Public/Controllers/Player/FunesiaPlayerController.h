@@ -16,11 +16,5 @@ class FUDNESIA_API AFunesiaPlayerController : public AFunesiaBaseController
 	GENERATED_BODY()
 	
 public:
-	UPROPERTY(EditAnywhere, Category="Input")
-	TSoftObjectPtr<UInputMappingContext> IMC_Default;
-	UPROPERTY(EditAnywhere, Category="Input")
-	int32 IMC_Default_Priority = 0;
 	
-protected:
-	virtual void OnPossess(APawn* InPawn) override;
 };
